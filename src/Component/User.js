@@ -15,7 +15,7 @@ const User = ({ userID }, { text1 }) => {
   };
 
   const handelKeyPress = (e) => {
-    if (e.key == "Enter") handelSend();
+    if (e.key === "Enter") handelSend();
   };
   return (
     <div className={`user-box ${userID}`}>
@@ -27,15 +27,15 @@ const User = ({ userID }, { text1 }) => {
         onChange={handeltext}
       ></input>
       <button onClick={handelSend}>Send</button>
-      <h1>{chat}</h1>
-      {chat &&
+      {/* <h1>{chat}</h1> */}
+      {/* {chat &&
         chat.map((item, index) => {
           return (
             <p className="text-data-align" key={index}>
               {item}
             </p>
           );
-        })}
+        })} */}
     </div>
   );
 };
